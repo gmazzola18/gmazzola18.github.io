@@ -5,94 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twin Shores Capital</title>
     <style>
-        /* Basic Reset and Typography */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-            line-height: 1.6; 
-            color: #333; 
-            background-color: #f4f7f6;
-        }
-
-        /* Navigation */
-        nav {
-            background: #fff;
-            padding: 1.5rem 10%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .logo { font-weight: bold; font-size: 1.5rem; color: #004a7c; text-transform: uppercase; letter-spacing: 1px; }
-
-        /* Hero Section */
-        header {
-            background: linear-gradient(rgba(0, 74, 124, 0.8), rgba(0, 74, 124, 0.8)), 
-                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000');
-            background-size: cover;
-            background-position: center;
-            height: 60vh;
+        /* This centers everything on the screen */
+        body, html {
+            height: 100%;
+            margin: 0;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            color: white;
-            text-align: center;
-            padding: 0 20px;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
         }
-        header h1 { font-size: 3rem; margin-bottom: 1rem; }
-        header p { font-size: 1.2rem; max-width: 600px; margin-bottom: 2rem; opacity: 0.9; }
 
-        /* Content Sections */
-        section { padding: 4rem 10%; background: white; }
-        .services { display: flex; gap: 2rem; justify-content: space-around; margin-top: 2rem; }
-        .card { 
-            flex: 1; 
-            padding: 2rem; 
-            border: 1px solid #eee; 
-            border-radius: 8px; 
+        .container {
             text-align: center;
-            transition: transform 0.3s ease;
+            padding: 20px;
         }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .card h3 { color: #004a7c; margin-bottom: 1rem; }
 
-        /* Footer */
-        footer { background: #333; color: white; text-align: center; padding: 2rem; font-size: 0.9rem; }
+        /* Placeholder for your logo */
+        .logo-placeholder {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+            /* Remove the border/background once you have a real logo image */
+            border: 1px dashed #ccc;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            color: #999;
+            font-size: 0.8rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        .contact-line {
+            font-size: 1rem;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        a {
+            color: #004a7c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
-    <nav>
-        <div class="logo">Twin Shores Capital</div>
-    </nav>
-
-    <header>
-        <h1>Strategic Capital Solutions</h1>
-        <p>Providing the expertise and resources to navigate complex financial landscapes and drive sustainable growth.</p>
-    </header>
-
-    <section id="about">
-        <h2 style="text-align: center; color: #004a7c;">Our Focus</h2>
-        <div class="services">
-            <div class="card">
-                <h3>Asset Management</h3>
-                <p>Tailored strategies designed to preserve wealth and maximize returns over the long term.</p>
-            </div>
-            <div class="card">
-                <h3>Capital Advisory</h3>
-                <p>Expert guidance on capital structure, financing, and strategic market positioning.</p>
-            </div>
-            <div class="card">
-                <h3>Strategic Partnerships</h3>
-                <p>Leveraging a global network to create unique investment opportunities and value.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Twin Shores Capital. All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <div class="logo-placeholder">LOGO SPACE</div>
+        
+        <h1>Twin Shores Capital</h1>
+        
+        <p class="contact-line">
+            Reach out to <a href="mailto:inquiries@twinshorescapital.com">inquiries@twinshorescapital.com</a> to learn more.
+        </p>
+    </div>
 
 </body>
 </html>
