@@ -6,22 +6,25 @@
     <title>Twin Shores Capital</title>
     <style>
         body, html {
-            height: 100%;
+            min-height: 100vh; 
             margin: 0;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: center; 
             align-items: center;
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             background-color: #ffffff;
             color: #1a1a1a;
             line-height: 1.6;
+            padding: 60px 0; /* Increased top/bottom padding for a premium feel */
         }
 
         .container {
-            text-align: center;
-            padding: 40px 20px;
+            text-align: center; /* Keeps the logo and header centered */
+            padding: 20px;
             max-width: 650px;
+            animation: fadeInUp 1.2s ease-out;
+            will-change: transform, opacity; 
         }
 
         .logo {
@@ -31,19 +34,25 @@
         }
 
         h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 400;
             color: #004a7c;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
             text-transform: uppercase;
         }
 
         .description {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #444;
             margin-bottom: 40px;
             font-weight: 300;
+            /* The Change: Left-aligning the text within the container */
+            text-align: left; 
+        }
+
+        .description p {
+            margin-bottom: 1.5rem;
         }
 
         .contact-line {
@@ -52,18 +61,21 @@
             border-top: 1px solid #eee;
             padding-top: 25px;
             letter-spacing: 0.5px;
+            text-align: center; /* Keeps the contact info centered */
         }
 
         a {
             color: #004a7c;
             text-decoration: none;
             font-weight: 500;
+            transition: color 0.3s ease;
         }
 
         a:hover {
+            color: #002d4d;
             text-decoration: underline;
         }
-        /* 1. Define the subtle fade-in and slide-up animation */
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -73,14 +85,6 @@
                 opacity: 1;
                 transform: translateY(0);
             }
-        }
-
-        /* 2. Apply it to the container so everything inside moves together */
-        .container {
-            text-align: center;
-            padding: 40px 20px;
-            max-width: 650px;
-            animation: fadeInUp 1.2s ease-out; /* 1.2 seconds for a smooth feel */
         }
     </style>
 </head>
@@ -93,10 +97,10 @@
         <!-- Firm Name -->
         <h1>Twin Shores Capital</h1>
         
-        <!-- Description Paragraph -->
+        <!-- Description Paragraphs -->
         <div class="description">
-            <p>Twin Shores Capital (TSC) is a private family office focused on long-term value creation and strategic investments. TSC manages a diversified multi-asset class portfolio of direct investments, private and public funds, and public securities. We partner with exceptional managers and founders to build enduring businesses across diverse sectors, guided by a disciplined approach to capital preservation and sustainable growth.  </p>
-            <p>Prior to founding TSC in 2019, Matt Levin spent over 27 years with Bain Capital, LP.  From 2001 through 2015, Matt was a Managing Director in the firm's private equity business where he co-led the North America consumer products and retail industry vertical. He served as a Senior Advisor in its private equity business from 2016 through September 2019.  </p>
+            <p>Twin Shores Capital (TSC) is a private family office focused on long-term value creation and strategic investments. TSC manages a diversified multi-asset class portfolio of direct investments, private and public funds, and public securities. We partner with exceptional managers and founders to build enduring businesses across diverse sectors, guided by a disciplined approach to capital preservation and sustainable growth.</p>
+            <p>Prior to founding TSC in 2019, Matt Levin spent over 27 years with Bain Capital, LP. From 2001 through 2015, Matt was a Managing Director in the firm's private equity business where he co-led the North America consumer products and retail industry vertical. He served as a Senior Advisor in its private equity business from 2016 through September 2019.</p>
         </div>
         
         <!-- Contact Information -->
