@@ -63,6 +63,25 @@
         a:hover {
             text-decoration: underline;
         }
+        /* 1. Define the subtle fade-in and slide-up animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 2. Apply it to the container so everything inside moves together */
+        .container {
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 650px;
+            animation: fadeInUp 1.2s ease-out; /* 1.2 seconds for a smooth feel */
+        }
     </style>
 </head>
 <body>
